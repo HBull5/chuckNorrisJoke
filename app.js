@@ -10,7 +10,7 @@ function loadJoke(e) {
       const joke = JSON.parse(this.responseText);
       if(joke.type === "success") {
         joke.value.forEach((joke) => {
-          output += `<p>${joke.joke}</p>`;
+          output += `<p>${joke.joke}</p><br>`;
         });
         display.innerHTML = output;
       } else {
